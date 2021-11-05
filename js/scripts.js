@@ -20,34 +20,34 @@ Pizza.prototype.totalPrice = function() {
 
 Pizza.prototype.sizePrice = function() {
   if (this.size === "small") {
-    return this.price +=2;
+    this.price +=2;
   }
   if (this.size === "medium") {
-    return this.price +=4;
+    this.price +=4;
   }
   if (this.size === "large") {
-    return this.price +=6;
+    this.price +=6;
   }
 }
 
 Pizza.prototype.crustPrice = function() {
   if (this.crust === "thin") {
-    return this.price +=1;
+    this.price +=1;
   }
   if (this.crust === "thick") {
-    return this.price +=2;
+    this.price +=2;
   }
   if (this.crust === "stuffed") {
-    return this.price +=3;
+    this.price +=3;
   }  
 }
 
 Pizza.prototype.proteinPrice = function() {
   if (this.protein === "chicken" || this.protein === "ham") {
-    return this.price +=4;
+    this.price +=4;
   }
   if (this.protein === "pepperoni" || this.protein === "sausage") {
-    return this.price +=2;
+    this.price +=2;
   }
 }
 
@@ -71,3 +71,22 @@ Pizza.prototype.toppingsPrice = function() {
     this.price +=2
   }
 }
+
+
+// User Interface Logic
+
+$(document).ready(function() {
+  $("#formpizza").submit(function(event) {
+    event.preventDefault();
+    const pizzaSize = $("#pizzasize");
+    const pizzaCrust = $("#pizzacrust");
+    const pizzaProtein = $("#pizzaprotein")
+    const pizzaTopping1 = $("#pizzatopping1");
+    const pizzaTopping2 = $("#pizzatopping2");
+    const pizzaTopping3 = $("#pizzatopping3");
+
+    let userPizza = new Pizza(pizzaSize, pizzaCrust, pizzaProtein, pizzaTopping1, pizzaTopping2, pizzaTopping3)
+    const pizzaPrice = userPizza.totalPrice();
+    $("#finalpizzaprice").text(pizzaPrice);
+  });
+});
