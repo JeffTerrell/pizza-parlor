@@ -76,14 +76,14 @@ Pizza.prototype.toppingsPrice = function() {
 // User Interface Logic
 
 $(document).ready(function() {
-  $("#formpizza").submit(function(event) {
+  $("#pizzaselector").submit(function(event) {
     event.preventDefault();
-    const pizzaSize = $("#pizzasize");
-    const pizzaCrust = $("#pizzacrust");
-    const pizzaProtein = $("#pizzaprotein")
-    const pizzaTopping1 = $("#pizzatopping1");
-    const pizzaTopping2 = $("#pizzatopping2");
-    const pizzaTopping3 = $("#pizzatopping3");
+    const pizzaSize = $("#pizzasize").val();
+    const pizzaCrust = $("#pizzacrust").val();
+    const pizzaProtein = $("#pizzaprotein").val()
+    const pizzaTopping1 = $("#pizzatopping1").val();
+    const pizzaTopping2 = $("#pizzatopping2").val();
+    const pizzaTopping3 = $("#pizzatopping3").val();
 
     let userPizza = new Pizza(pizzaSize, pizzaCrust, pizzaProtein, pizzaTopping1, pizzaTopping2, pizzaTopping3)
     const pizzaPrice = userPizza.totalPrice();
