@@ -22,3 +22,16 @@ Pizza.prototype.sizePrice = function() {
     return this.price +=6;
   }
 }
+
+Pizza.prototype.crustPrice = function() {
+  this.price = 6;
+  if (this.crust === "thin") {
+    return this.price +=1;
+  }
+  if (this.crust === "thick") {
+    return this.price +=2;
+  }
+  if (this.crust === "stuffed") {
+    return this.price +=3;
+  }  
+}
