@@ -2,6 +2,7 @@
 
 function Pizza(size, crust, protein, topping1, topping2, topping3) {
   this.size = size;
+  console.log(this.size);
   this.crust = crust;
   this.protein = protein;
   this.topping1 = [topping1];
@@ -11,6 +12,9 @@ function Pizza(size, crust, protein, topping1, topping2, topping3) {
 }
 
 Pizza.prototype.totalPrice = function() {
+  if (this.size === "select" || this.crust === "select") {
+    return $("#error").slideToggle();
+  }
   this.sizePrice();
   this.crustPrice();
   this.proteinPrice();
@@ -94,6 +98,7 @@ Pizza.prototype.newPizza = function() {
 $(document).ready(function() {
   $("#pizzaselector").submit(function(event) {
     event.preventDefault();
+    $("#error").hide(); 
 
     const pizzaSize = $("#pizzasize").val();
     const pizzaCrust = $("#pizzacrust").val();
@@ -105,8 +110,8 @@ $(document).ready(function() {
     let userPizza = new Pizza(pizzaSize, pizzaCrust, pizzaProtein, pizzaTopping1, pizzaTopping2, pizzaTopping3)
     const pizzaPrice = userPizza.totalPrice();
     $("#pizzaprice").show();
-    $("#finalpizzaprice").text(pizzaPrice);
-    userPizza.newPizza();  
+    $("#finalpizzaprice").html(pizzaPrice);
+    userPizza.newPizza(); 
   });
 
   $("#newpizza").click(function() {
