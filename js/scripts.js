@@ -119,9 +119,3 @@ $(document).ready(function() {
     $("#pizzaprice").slideToggle();      
   })
 });
-
-
-
-  // if (this.size === "undefined" || this.crust === "undefined") {
-  //   return $("#error").show();
-  // }
