@@ -10,8 +10,15 @@ function Pizza(size, crust, protein, topping1, topping2, topping3) {
   this.price = 6;
 }
 
+Pizza.prototype.totalPrice = function() {
+  this.sizePrice();
+  this.crustPrice();
+  this.proteinPrice();
+  this.toppingsPrice();
+  return this.price;
+}
+
 Pizza.prototype.sizePrice = function() {
-  this.price = 6;
   if (this.size === "small") {
     return this.price +=2;
   }
@@ -24,7 +31,6 @@ Pizza.prototype.sizePrice = function() {
 }
 
 Pizza.prototype.crustPrice = function() {
-  this.price = 6;
   if (this.crust === "thin") {
     return this.price +=1;
   }
@@ -37,7 +43,6 @@ Pizza.prototype.crustPrice = function() {
 }
 
 Pizza.prototype.proteinPrice = function() {
-  this.price = 6;
   if (this.protein === "chicken" || this.protein === "ham") {
     return this.price +=4;
   }
@@ -47,7 +52,6 @@ Pizza.prototype.proteinPrice = function() {
 }
 
 Pizza.prototype.toppingsPrice = function() {
-  this.price = 6;
   if (this.topping1 === "onions" || this.topping2 === "onions" || this.topping3 === "onions") {
     this.price +=1
   }
