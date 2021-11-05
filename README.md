@@ -44,12 +44,12 @@ Users can select from a variety of options to build a custom pizza including, si
 * userPizza;
 * Expected Output: Pizza {size: "large", crust: "thin", protein: "pepperoni", topping1: "peppers", topping2: "onions", topping3: "mushrooms"}
 
-### Describe: ?()
-* Test: "It should return an error if the user input value is not a number"
+### Describe: Pizza.prototype.sizePrice()
+* Test: "It should return a numeric value for price based on the selected size of the pizza"
 * Code:
-* const userInput = "hello";
-* numberIdentifierLoop(arrayUserInput);
-* Expected Output:
+* const userPizza = new Pizza("large");
+* userPizza.sizePrice();
+* Expected Output: Pizza {price: 10};
 ***
 
 
