@@ -34,7 +34,7 @@ Pizza.prototype.crustPrice = function() {
   if (this.crust === "thin") {
     this.price +=1;
   }
-  if (this.crust === "thick") {
+  if (this.crust === "deep dish") {
     this.price +=2;
   }
   if (this.crust === "stuffed") {
@@ -90,3 +90,9 @@ $(document).ready(function() {
     $("#finalpizzaprice").text(pizzaPrice);
   });
 });
+
+
+
+  // if (this.size === "undefined" || this.crust === "undefined") {
+  //   return $("#error").show();
+  // }
