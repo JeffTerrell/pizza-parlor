@@ -89,6 +89,11 @@ $(document).ready(function() {
     const pizzaPrice = userPizza.totalPrice();
     $("#pizzaprice").show();
     $("#finalpizzaprice").text(pizzaPrice);
+    
+    $("#newpizza").click(function() {
+      // userPizza.newPizza();
+      $("#pizzaselector").trigger("reset");
+    })
   });
 });
 
