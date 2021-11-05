@@ -74,7 +74,7 @@ Users can select from a variety of options to build a custom pizza including, si
 ***
 * Test: "It should return a numeric value for price based on the selected toppings of the pizza when 2 or more toppings are identical"
 * Code:
-* const userPizza = new Pizza("large", "thin", "ham", "onions", "pineapple", "mushrooms");
+* const userPizza = new Pizza("large", "thin", "ham", "onions", "onions", "mushrooms");
 * userPizza.topppingsPrice();
 * Expected Output: Pizza {size: "large", crust: "thin", protein: "ham", topping1: "onions", topping2: "onions", topping3: "mushrooms", price: 10};
 
