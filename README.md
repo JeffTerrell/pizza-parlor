@@ -26,11 +26,17 @@ Users can select from a variety of options to build a custom pizza including, si
 * userPizza;
 * Expected Output: Pizza {size: "large"}
 ***
-* Test: "It should return a pizza object with crust style"
+* Test: "It should return a pizza object with propeties of size and crust style"
 * Code:
-* const userPizza = new Pizza("thin");
+* const userPizza = new Pizza("large", "thin");
 * userPizza;
-* Expected Output: Pizza {crust style: "thin"}
+* Expected Output: Pizza {size: "large", crust: "thin"}
+***
+* Test: "It should return a pizza object with propeties of size, crust style, topping1, topping2, and topping3"
+* Code:
+* const userPizza = new Pizza("large", "thin", "peppers", "onions", "mushrooms");
+* userPizza;
+* Expected Output: Pizza {size: "large", crust: "thin", topping1: "peppers", topping2: "onions", topping3: "mushrooms"}
 
 ### Describe: ?()
 * Test: "It should return an error if the user input value is not a number"
