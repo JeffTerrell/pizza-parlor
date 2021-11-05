@@ -35,3 +35,13 @@ Pizza.prototype.crustPrice = function() {
     return this.price +=3;
   }  
 }
+
+Pizza.prototype.proteinPrice = function() {
+  this.price = 6;
+  if (this.protein === "chicken" || this.protein === "ham") {
+    return this.price +=4;
+  }
+  if (this.protein === "pepperoni" || this.protein === "sausage") {
+    return this.price +=2;
+  }
+}

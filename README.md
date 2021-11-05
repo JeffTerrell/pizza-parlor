@@ -63,7 +63,7 @@ Users can select from a variety of options to build a custom pizza including, si
 * Code:
 * const userPizza = new Pizza("large", "thin", "ham");
 * userPizza.proteinPrice();
-* Expected Output: Pizza {size: "large", crust: "thin", protein: "ham", price: 8};
+* Expected Output: Pizza {size: "large", crust: "thin", protein: "ham", price: 10};
 
 
 ## Setup/Installation Requirements
