@@ -72,12 +72,23 @@ Pizza.prototype.toppingsPrice = function() {
   }
 }
 
+Pizza.prototype.newPizza = function() {
+  this.size = "";
+  this.crust = "";
+  this.protein = "";
+  this.topping1 = "";
+  this.topping2 = "";
+  this.topping3 = "";
+  this.price = 6;
+}
+
 
 // User Interface Logic
 
 $(document).ready(function() {
   $("#pizzaselector").submit(function(event) {
     event.preventDefault();
+
     const pizzaSize = $("#pizzasize").val();
     const pizzaCrust = $("#pizzacrust").val();
     const pizzaProtein = $("#pizzaprotein").val()
@@ -89,12 +100,13 @@ $(document).ready(function() {
     const pizzaPrice = userPizza.totalPrice();
     $("#pizzaprice").show();
     $("#finalpizzaprice").text(pizzaPrice);
-    
-    $("#newpizza").click(function() {
-      // userPizza.newPizza();
-      $("#pizzaselector").trigger("reset");
-    })
+    userPizza.newPizza();  
   });
+
+  $("#newpizza").click(function() {
+    $("#pizzaselector").trigger("reset")
+    $("#pizzaprice").slideToggle();      
+  })
 });
 
 
