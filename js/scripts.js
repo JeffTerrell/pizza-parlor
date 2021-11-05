@@ -7,4 +7,18 @@ function Pizza(size, crust, protein, topping1, topping2, topping3) {
   this.topping1 = topping1;
   this.topping2 = topping2;
   this.topping3 = topping3;
+  this.price = 6;
+}
+
+Pizza.prototype.sizePrice = function() {
+  this.price = 6;
+  if (this.size === "small") {
+    return this.price +=2;
+  }
+  if (this.size === "medium") {
+    return this.price +=4;
+  }
+  if (this.size === "large") {
+    return this.price +=6;
+  }
 }

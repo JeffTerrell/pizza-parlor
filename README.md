@@ -49,7 +49,7 @@ Users can select from a variety of options to build a custom pizza including, si
 * Code:
 * const userPizza = new Pizza("large");
 * userPizza.sizePrice();
-* Expected Output: Pizza {price: 10};
+* Expected Output: Pizza {price: 12};
 ***
 
 
