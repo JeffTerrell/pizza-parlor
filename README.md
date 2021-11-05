@@ -50,7 +50,14 @@ Users can select from a variety of options to build a custom pizza including, si
 * const userPizza = new Pizza("large");
 * userPizza.sizePrice();
 * Expected Output: Pizza {price: 12};
-***
+
+### Describe: Pizza.prototype.crustPrice()
+* Test: "It should return a numeric value for price based on the selected crust of the pizza"
+* Code:
+* const userPizza = new Pizza("large", "thin");
+* userPizza.crustPrice();
+* Expected Output: Pizza {price: 7};
+
 
 
 
