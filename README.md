@@ -58,7 +58,12 @@ Users can select from a variety of options to build a custom pizza including, si
 * userPizza.crustPrice();
 * Expected Output: Pizza {size: "large", crust: "thin", price: 7};
 
-
+### Describe: Pizza.prototype.proteinPrice()
+* Test: "It should return a numeric value for price based on the selected protein of the pizza"
+* Code:
+* const userPizza = new Pizza("large", "thin", "ham");
+* userPizza.proteinPrice();
+* Expected Output: Pizza {size: "large", crust: "thin", protein: "ham", price: 8};
 
 
 ## Setup/Installation Requirements
