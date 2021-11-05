@@ -45,3 +45,25 @@ Pizza.prototype.proteinPrice = function() {
     return this.price +=2;
   }
 }
+
+Pizza.prototype.toppingsPrice = function() {
+  this.price = 6;
+  if (this.topping1 === "onions" || this.topping2 === "onions" || this.topping3 === "onions") {
+    this.price +=1
+  }
+  if (this.topping1 === "peppers" || this.topping2 === "peppers" || this.topping3 === "peppers") {
+    this.price +=1
+  }
+  if (this.topping1 === "spinach" || this.topping2 === "spinach" || this.topping3 === "spinach") {
+    this.price +=1
+  }
+  if (this.topping1 === "mushrooms" || this.topping2 === "mushrooms" || this.topping3 === "mushrooms") {
+    this.price +=2
+  }
+  if (this.topping1 === "black olives" || this.topping2 === "black olives" || this.topping3 === "black olives") {
+    this.price +=2
+  }
+  if (this.topping1 === "pineapple" || this.topping2 === "pineapple" || this.topping3 === "pineapple") {
+    this.price +=2
+  }
+}
