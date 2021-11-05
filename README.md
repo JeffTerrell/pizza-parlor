@@ -65,6 +65,12 @@ Users can select from a variety of options to build a custom pizza including, si
 * userPizza.proteinPrice();
 * Expected Output: Pizza {size: "large", crust: "thin", protein: "ham", price: 10};
 
+### Describe: Pizza.prototype.toppingsPrice()
+* Test: "It should return a numeric value for price based on the selected toppings of the pizza"
+* Code:
+* const userPizza = new Pizza("large", "thin", "ham", "onions", "pineapple", "mushrooms");
+* userPizza.proteinPrice();
+* Expected Output: Pizza {size: "large", crust: "thin", protein: "ham", topping1: "onions", topping2: "pineapple", topping3: "mushrooms", price: 11};
 
 ## Setup/Installation Requirements
 
