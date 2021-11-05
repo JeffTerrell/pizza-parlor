@@ -40,9 +40,9 @@ Users can select from a variety of options to build a custom pizza including, si
 ***
 * Test: "It should return a pizza object with propeties of size, crust style, topping1, topping2, topping3, and protein"
 * Code:
-* const userPizza = new Pizza("large", "thin", "peppers", "onions", "mushrooms", "pepperoni");
+* const userPizza = new Pizza("large", "thin", "pepperoni", "peppers", "onions", "mushrooms");
 * userPizza;
-* Expected Output: Pizza {size: "large", crust: "thin", topping1: "peppers", topping2: "onions", topping3: "mushrooms", protein: "pepperoni"}
+* Expected Output: Pizza {size: "large", crust: "thin", protein: "pepperoni", topping1: "peppers", topping2: "onions", topping3: "mushrooms"}
 
 ### Describe: ?()
 * Test: "It should return an error if the user input value is not a number"
