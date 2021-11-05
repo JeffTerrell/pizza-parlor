@@ -24,13 +24,13 @@ Users can select from a variety of options to build a custom pizza including, si
 * Code:
 * const userPizza = new Pizza("large");
 * userPizza;
-* Expected Output: userPizza{size: "large"}
+* Expected Output: Pizza {size: "large"}
 ***
 * Test: "It should return a pizza object with crust style"
 * Code:
 * const userPizza = new Pizza("thin");
-* userPizza
-* Expected Output: userPizza{crust style: "thin"}
+* userPizza;
+* Expected Output: Pizza {crust style: "thin"}
 
 ### Describe: ?()
 * Test: "It should return an error if the user input value is not a number"
