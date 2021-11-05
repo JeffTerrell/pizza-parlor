@@ -87,6 +87,7 @@ $(document).ready(function() {
 
     let userPizza = new Pizza(pizzaSize, pizzaCrust, pizzaProtein, pizzaTopping1, pizzaTopping2, pizzaTopping3)
     const pizzaPrice = userPizza.totalPrice();
+    $("#pizzaprice").show();
     $("#finalpizzaprice").text(pizzaPrice);
   });
 });
