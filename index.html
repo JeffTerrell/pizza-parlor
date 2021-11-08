@@ -11,86 +11,109 @@
   <div class="container">
     <div class="shadow-lg p-9 mb-5 bg-white rounded">
       <div class="header">
-        <h1>Welcome to Luigi's Pizza Parlor!</h1>
-        <h4>Home to the best pizzas north of the South Pole!</h4>
-        <h5>Build your custom pizza below:</h5>
-        <p>(All pizzas come supercharged with mozzarella cheese)</p>
+        <img src="https://bit.ly/3mRI1xm" id="img1" class="rounded-circle" alt="a pizza">
+        <img src="https://bit.ly/3mRI1xm" id="img2" class="rounded-circle" alt="a pizza">
+        <div class="header-text">
+          <h1>Welcome to Luigi's Pizza Parlor!</h1>
+          <h4>Home to the best pizzas north of the South Pole!</h4>
+        </div>
+        <div class="header-text2">    
+          <h5>Build your custom pizza below:</h5>
+          <p>(All pizzas come supercharged with mozzarella cheese)</p> 
+        </div>  
       </div>
       <form id="pizzaselector">
-        <div class="selectsize">
-          <label for="pizzasize"><h5>Pizza Size</h5></label>
-          <select id="pizzasize" class="form-control">
-            <option value="select">Select a size...</option>
-            <option value="small">Small</option>
-            <option value="medium">Medium</option>
-            <option value="large">Large</option>
-          </select>  
+        <div class="row">
+          <div class="col-md-4">
+            <div class="selectsize">
+              <label for="pizzasize"><h5>Pizza Size</h5></label>
+              <select id="pizzasize" class="form-control">
+                <option value="select">Select a size...</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+              </select>  
+            </div>
+          </div>
+          <div class="col-md-4">  
+            <div class="selectcrust">
+              <label for="pizzacrust"><h5>Pizza Crust</h5></label>
+              <select id="pizzacrust" class="form-control">
+                <option value="select">Select a crust...</option>
+                <option value="thin">Thin</option>
+                <option value="deep dish">Deep Dish</option>
+                <option value="stuffed">Stuffed</option>
+              </select>  
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="selectprotein">
+              <label for="pizzaprotein"><h5>Pizza Protein</h5></label>
+              <select id="pizzaprotein" class="form-control">
+                <option value="select">Select a protein...</option>
+                <option value="pepperoni">Pepperoni</option>
+                <option value="sausage">Sausage</option>
+                <option value="chicken">Chicken</option>
+                <option value="ham">Ham</option>
+              </select>  
+            </div>
+          </div>
         </div>
-        <div class="selectcrust">
-          <label for="pizzacrust"><h5>Pizza Crust</h5></label>
-          <select id="pizzacrust" class="form-control">
-            <option value="select">Select a crust...</option>
-            <option value="thin">Thin</option>
-            <option value="deep dish">Deep Dish</option>
-            <option value="stuffed">Stuffed</option>
-          </select>  
-        </div>
-        <div class="selectprotein">
-          <label for="pizzaprotein"><h5>Pizza Protein</h5></label>
-          <select id="pizzaprotein" class="form-control">
-            <option value="select">Select a protein...</option>
-            <option value="pepperoni">Pepperoni</option>
-            <option value="sausage">Sausage</option>
-            <option value="chicken">Chicken</option>
-            <option value="ham">Ham</option>
-          </select>  
-        </div>
-        <div class="selecttopping1">
-          <label for="pizzatopping1"><h5>Pizza Topping 1</h5></label>
-          <select id="pizzatopping1" class="form-control">
-            <option value="select">Select a topping...</option>
-            <option value="onions">Onions</option>
-            <option value="spinach">Spinach</option>
-            <option value="peppers">Peppers</option>
-            <option value="mushrooms">Mushrooms</option>
-            <option value="pineapple">Pineapple</option>
-            <option value="black olives">Black Olives</option>
-          </select>  
-        </div>
-        <div class="selecttopping2">
-          <label for="pizzatopping2"><h5>Pizza Topping 2</h5></label>
-          <select id="pizzatopping2" class="form-control">
-            <option value="select">Select a topping...</option>
-            <option value="onions">Onions</option>
-            <option value="spinach">Spinach</option>
-            <option value="peppers">Peppers</option>
-            <option value="mushrooms">Mushrooms</option>
-            <option value="pineapple">Pineapple</option>
-            <option value="black olives">Black Olives</option>
-          </select>  
-        </div>
-        <div class="selecttopping3">
-          <label for="pizzatopping3"><h5>Pizza Topping 3</h5></label>
-          <select id="pizzatopping3" class="form-control">
-            <option value="select">Select a topping...</option>
-            <option value="onions">Onions</option>
-            <option value="spinach">Spinach</option>
-            <option value="peppers">Peppers</option>
-            <option value="mushrooms">Mushrooms</option>
-            <option value="pineapple">Pineapple</option>
-            <option value="black olives">Black Olives</option>
-          </select>  
-        </div>
+        <hr class="split">
+        <div class="row">
+          <div class="col-md-4">  
+            <div class="selecttopping1">
+              <label for="pizzatopping1"><h5>Pizza Topping 1</h5></label>
+              <select id="pizzatopping1" class="form-control">
+                <option value="select">Select a topping...</option>
+                <option value="onions">Onions</option>
+                <option value="spinach">Spinach</option>
+                <option value="peppers">Peppers</option>
+                <option value="mushrooms">Mushrooms</option>
+                <option value="pineapple">Pineapple</option>
+                <option value="black olives">Black Olives</option>
+              </select>  
+            </div>
+          </div>
+          <div class="col-md-4">  
+            <div class="selecttopping2">
+              <label for="pizzatopping2"><h5>Pizza Topping 2</h5></label>
+              <select id="pizzatopping2" class="form-control">
+                <option value="select">Select a topping...</option>
+                <option value="onions">Onions</option>
+                <option value="spinach">Spinach</option>
+                <option value="peppers">Peppers</option>
+                <option value="mushrooms">Mushrooms</option>
+                <option value="pineapple">Pineapple</option>
+                <option value="black olives">Black Olives</option>
+              </select>  
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="selecttopping3">
+              <label for="pizzatopping3"><h5>Pizza Topping 3</h5></label>
+              <select id="pizzatopping3" class="form-control">
+                <option value="select">Select a topping...</option>
+                <option value="onions">Onions</option>
+                <option value="spinach">Spinach</option>
+                <option value="peppers">Peppers</option>
+                <option value="mushrooms">Mushrooms</option>
+                <option value="pineapple">Pineapple</option>
+                <option value="black olives">Black Olives</option>
+              </select>  
+            </div>
+          </div>
+        </div>    
         <button type="submit" class="btn btn-success">Submit!</button>
         <button type="submit" id="newpizza" class="btn btn-danger">New Pizza</button>
       </form>
       <div id="pizzaprice">
-        <h3>Total Price:</h3>
-        <h2 id="finalpizzaprice"></h2>
-      </div>
-      <div id="error">
-        <h3>Please select a size and crust type!</h3>
-      </div> 
+          <h3>Total Price:</h3>
+          <h2 id="finalpizzaprice"></h2>
+        <div id="error">
+          <h3>Please select a size and crust type!</h3>
+        </div>
+      </div>   
     </div>
   </div>    
 </body>

@@ -1,13 +1,96 @@
-#pizzaprice {
-  display: none;
+body {
+  background-color: rgb(229, 250, 226);
 }
+
+.header {
+  color: rgb(148, 0, 0);
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 1.15%;
+  padding-top: 3%;
+  padding-bottom: .01%;
+  box-shadow: 0px 1px 15px rgb(148, 0, 0);
+  background-image: url("../img/pizzaguy.png");
+  background-repeat: no-repeat;
+  background-size: 10%;
+  background-position-x: 47%;
+  background-position-y: 65%;
+}
+
+#img1 {
+  float: right;
+  margin-top: 1%;
+  margin-right: 6%;
+  width: 15%;
+  height: auto;
+  box-shadow: 0px 1px 15px rgb(148, 0, 0);
+}
+
+#img2 {
+  float: left;
+  margin-top: 1%;
+  margin-left: 6%;
+  width: 15%;
+  height: auto;
+  box-shadow: 0px 1px 15px rgb(148, 0, 0);
+}
+
+.header h5 {
+  margin-top: 7.7%;
+}
+
+.header-text {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  box-shadow: 0px 1px 15px rgb(148, 0, 0);
+  border-radius: 25px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom: 15%;
+}
+
+.header-text2 {
+  color: rgb(2, 102, 2);
+  box-shadow: 0px 1px 15px rgb(2, 102, 2);
+  border-radius: 25px;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: .5%;
+}  
+
+/* #pizzaprice {
+  display: none;
+} */
 
 #error {
   display: none;
 }
 
 #pizzaselector {
-  box-shadow: 0px 1px 15px rgb(1, 124, 32);
+  margin-top: 1%;
+  box-shadow: 0px 1px 15px rgb(148, 0, 0);
+}
+
+.selectsize {
+  margin-bottom: 2%;
+}
+
+hr.split {
+  border: 1px solid red;
+}
+
+#pizzaprice {
+  display: none;
+  box-shadow: 0px 1px 15px rgb(148, 0, 0);
+  margin-top: 1%;
+  padding-top: .5%;
+  padding-bottom: .5%;
+  padding-left: .5%;
+  background-image: url("../img/luigipizza.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 45%;
 }
 
 #error {
